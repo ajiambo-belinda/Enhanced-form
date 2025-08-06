@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Form</title>
+</head>
+<body>
+  <h1>Che's Bay Resort</h1>
+
+  <!-- Well-structured content -->
+  <section>
+    <h2>Experience Che's Bay Resort: Where Comfort Meets Adventure</h2>
+    <p>Che's Bay Resort is a beautiful beachside getaway on Lake Victoria in Busia County,
+       Kenya. Surrounded by scenic hills and the lake, the resort offers modern and traditional accommodations, fun water activities, delicious food,
+        and a relaxing atmosphere—making it a perfect spot for leisure and adventure </p>
+       
+          <!-----Services---->
+        <section>
+          <h3>What we offer</h3>
+          <p>At Che's Bay, we offer a wide range of programs and experiences designed to protect and celebrate our local marine environment.
+            Community members can participate in shellfish restoration projects, join hands-on educational workshops, or support water quality 
+            and habitat improvement initiatives</p>
+    <ul>
+      <li>Events and Outreach</li>
+      <li>Volunteer and Sponsorship Opportunities</li>
+      <li>Habitat Improvement Projects</li>
+     <li>Shellfish and Fin Fish Research and Restoration</li>
+      <li>Water Quality Protection Initiatives</li>
+    </ul>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Services</th>
+      <th>Notes</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Events and Outreach</td>
+      <td>Open to all ages</td>
+      <td>Workshops and community events to engage and educate about bay conservation.</td>
+    </tr>
+    <tr>
+      <td>Volunteer and Sponsorship Opportunities</td>
+      <td>Volunteer hours count towards community service</td>
+      <td>Programs allowing individuals and businesses to support bay restoration efforts.</td>
+    </tr>
+    <tr>
+      <td>Habitat Improvement Projects</td>
+      <td>Focus on native species</td>
+      <td>Initiatives to restore and enhance natural habitats for wildlife in the bay area.</td>
+    </tr>
+    <tr>
+      <td>Shellfish and Fin Fish Research and Restoration</td>
+      <td>Includes community participation</td>
+      <td>Scientific research and active restoration of shellfish beds and fish populations.</td>
+    </tr>
+    <tr>
+      <td>Water Quality Protection Initiatives</td>
+      <td>Collaboration with local schools</td>
+      <td>Monitoring and projects aimed at improving water quality in the bay ecosystem.</td>
+    </tr>
+  </tbody>
+</table>
+
+        
+
+    <h2>Home</h2>
+    <p>This is the homepage of Che's bay resort</p>
+    <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqGVzMqepLC0CvWVlDNoUf2NbZ1-0wd6SL6BotXl5JrlSxcNOoRILKHT5L4TYmiHz4p5IIvcQ0wRgskTMLl60x6YXelRuOJ0x1ZpuYpR97l--MdCZPu1RLes3hGZdJqIIjgSXDq" alt="Home" />
+  </section>
+
+  <!-- HTML5 Form -->
+  <section>
+    <h2>Contact & Service Request Form</h2>
+    <form action="#" method="post" autocomplete="on" novalidate>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label><br />
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          placeholder="Enter your full name"
+          required
+          autocomplete="name"
+          maxlength="50"
+        /><br /><br />
+
+        <label for="email">Email Address:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@example.com"
+          required
+          autocomplete="email"
+        /><br /><br />
+
+        <label for="phone">Phone Number:</label><br />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="123-456-7890"
+          pattern="\d{3}[-]\d{3}[-]\d{4}"
+          required
+          autocomplete="tel"
+        />
+        <small>Format: 123-456-7890</small><br /><br />
+
+        <label for="birthdate">Date of Birth:</label><br />
+        <input
+          type="date"
+          id="birthdate"
+          name="birthdate"
+          required
+          max="2005-12-31"
+        /><br /><br />
+
+        <label for="readonlyinfo">Member ID (readonly):</label><br />
+        <input
+          type="text"
+          id="readonlyinfo"
+          name="readonlyinfo"
+          value="M123456789"
+          readonly
+        /><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Service Request</legend>
+
+        <label for="service">Select Service:</label><br />
+        <select id="service" name="service" required>
+          <option value="" disabled selected>Select a service</option>
+          <option value="webdesign">Web Design</option>
+          <option value="seo">SEO Optimization</option>
+          <option value="contentmarketing">Content Marketing</option>
+          <option value="socialmedia">Social Media Management</option>
+        </select><br /><br />
+
+        <label>Preferred Contact Method:</label><br />
+        <input
+          type="radio"
+          id="contactemail"
+          name="contactmethod"
+          value="email"
+          required
+        />
+        <label for="contactemail">Email</label><br />
+        <input
+          type="radio"
+          id="contactphone"
+          name="contactmethod"
+          value="phone"
+        />
+        <label for="contactphone">Phone</label><br /><br />
+
+        <label for="budget">Estimated Budget (USD):</label><br />
+        <input
+          type="number"
+          id="budget"
+          name="budget"
+          min="100"
+          max="5000"
+          step="50"
+          placeholder="100 - 5000"
+          required
+        /><br /><br />
+
+        <label for="details">Additional Details:</label><br />
+        <textarea
+          id="details"
+          name="details"
+          rows="4"
+          cols="40"
+          placeholder="Provide any additional information here..."
+          autocomplete="off"
+        ></textarea><br /><br />
+      </fieldset>
+
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+</body>
+</html>
